@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="VehicleRecords" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="189.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vehiclemanagmentapplication.controller.MenuController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="44.200018310546874" minHeight="10.0" prefHeight="44.200018310546874" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="128.60001220703126" minHeight="0.0" prefHeight="46.59998168945314" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="266.80000000000007" minHeight="10.0" prefHeight="53.999994850158686" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="266.80000000000007" minHeight="10.0" prefHeight="53.999994850158686" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Vehicle Records">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Vehicle Brand" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="vehicleBrandText" prefHeight="26.0" prefWidth="161.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="100.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="Vehicle Model" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="vehicleModelText" prefHeight="26.0" prefWidth="161.0" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="100.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="Vehicle Year" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="vehicleYearText" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="100.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="Vehicle Type" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <ChoiceBox fx:id="vehicleTypeChoice" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="100.0" right="20.0" />
+         </GridPane.margin>
+      </ChoiceBox>
+      <Button mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="50.0" text="Next" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="40.0" />
+         </GridPane.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#menu" prefHeight="26.0" prefWidth="50.0" text="Menu" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>
